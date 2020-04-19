@@ -4,7 +4,9 @@ const p5 = require("p5");
 // If you make your own model, this is where you'd link to it. This is a model
 // that I trained on making "heart hands", like this
 // https://image.shutterstock.com/image-photo/woman-making-heart-her-hands-600w-1211985307.jpg
-const imageModelURL = 'https://teachablemachine.withgoogle.com/models/sltRChS8U/';
+//const imageModelURL = 'https://teachablemachine.withgoogle.com/models/sltRChS8U/';
+
+const imageModelURL = 'https://teachablemachine.withgoogle.com/models/4O3iKtP_I/';
 
 // Whether or not you want to flip the video horizontally. If you trained your model
 // using your webcam, then you'll want to enable this
@@ -51,6 +53,16 @@ const p5draw = (p) => {
         p.textSize(16);
         p.textAlign(p.CENTER);
         p.text(label, width / 2, height - 4);
+
+        //change the text to show what currently selected option is, on the page
+        window.document.getElementsByClassName('chosen')[0].innerHTML = label;
+        //select what endpoint will lead if you move 
+        var endpoint = window.document.getElementsByClassName(label)[0];
+        //change the endpoint on the anchor. Check that you found an element first
+        if (typeof endpoint !== 'undefined') {
+            var path = '/' + endpoint.textContent;
+            window.document.getElementsByClassName('move')[0].setAttribute("href", path);
+        }
     }
 
       // Get a prediction for the current video frame

@@ -1,0 +1,74 @@
+{
+    "start": {
+        "%description%": "Welcome to the start of your adventure! You can choose 3 directions to go - left, right, or up. You can use hand gestures to choose a direction. \nHold up an L-shape with your left hand to go left. \na rock-star shape with your right hand (pinky, index, thumb up) to go right. \nboth index fingers to go up. Click on the button Go to move after confirming the direction.",
+        "%image1%": "start.jpg",
+        "%image2%": "start2.jpg",
+        "%left%": "backyard",
+        "%right%": "castle",
+        "%up%": "pool"
+    },
+    "backyard": {
+        "%description%": "The smell of freshly cut grass. You walk barefoot into the backyard and breathe in the fresh air. Ahhh.",
+        "%image1%": "backyard.jpg",
+        "%image2%": "backyard2.jpg",
+        "%left%": "forest",
+        "%right%": "road",
+        "%up%": "castle"
+    },
+    "castle": {
+        "%description%": "I wonder how it would look like red. A stone cold wall stands in front of you. An empty gate stands unguarded as you hear the echos of an eagle above. Probably a nest somewhere.",
+        "%image1%": "castle.jpeg",
+        "%image2%": "castle2.jpg",
+        "%left%": "frontyard",
+        "%right%": "pool",
+        "%up%": "school"
+    },
+    "pool": {
+        "%description%": "A blue pool is wonderful in the summer. It stands still perfectly, rounded out by the tension on the water surface. Who knows how far the deep end goes?",
+        "%image1%": "pool.jpg",
+        "%image2%": "pool2.jpg",
+        "%left%": "backyard",
+        "%right%": "house",
+        "%up%": "road"
+    },
+    "frontyard": {
+        "%description%": "Looks like someone forgot to clean up after their dog's mess. Or multiple dogs. Who knows. It just smells bad.",
+        "%image1%": "frontyard.jpg",
+        "%image2%": "frontyard2.jpg",
+        "%left%": "backyard",
+        "%right%": "pool",
+        "%up%": "forest"
+    },
+    "house": {
+        "%description%": "A big house made out of bricks. A smart pig made this.",
+        "%image1%": "house.jpg",
+        "%image2%": "house2.jpg",
+        "%left%": "castle",
+        "%right%": "pool",
+        "%up%": "backyard"
+    },
+    "school": {
+        "%description%": "Not exactly the same school as before but the difference is night and day.",
+        "%image1%": "school.jpg",
+        "%image2%": "school2.jpg",
+        "%left%": "pool",
+        "%right%": "house",
+        "%up%": "road"
+    },
+    "forest": {
+        "%description%": "A green forest mixed with trees, animals, and plants. Be aware during nighttime.",
+        "%image1%": "forest.jpg",
+        "%image2%": "forest2.jpg",
+        "%left%": "frontyard",
+        "%right%": "road",
+        "%up%": "school"
+    },
+    "road": {
+        "%description%": "I walk this lonely road the only one that I have ever known.",
+        "%image1%": "road.jpeg",
+        "%image2%": "road2.jpg",
+        "%left%": "school",
+        "%right%": "forest",
+        "%up%": "house"
+    }
+}

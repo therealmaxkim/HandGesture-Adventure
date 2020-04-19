@@ -10,8 +10,11 @@
     "watch": "NODE_ENV=development node server.js"
   },
   "dependencies": {
+    "body-parser": "^1.19.0",
     "commander": "^5.0.0",
+    "cookie-parser": "^1.4.5",
     "express": "^4.16.4",
+    "fs": "0.0.1-security",
     "jsx-loader": "^0.13.2",
     "mkdirp": "^1.0.4",
     "node-fetch": "^2.6.0",

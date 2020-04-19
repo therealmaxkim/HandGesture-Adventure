@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Hand Gesture Adventure by Max Kim</title>
+    <meta name="description" content="A cool thing made with ml5">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+  </head>
+  <body>
+    <div id="main">
+      <!-- the hello world app will be in here! -->
+    </div>
+
+    <div class="home">
+      <form action="/set_name" method="post">
+        <label for="name">Enter name: </label>
+        <input id="name" type="text" name="name" value="Fred Johnson">
+        <input type="submit" value="OK">
+      </form>
+    </div>
+
+    <div class="actions">
+      <p class="left">%left%</p>
+      <p class="up">%up%</p>
+      <p class="right">%right%</p>
+      <p class="Nothing" hidden></p>
+    </div>
+
+    <div class="go">
+      <p>Your current chosen move is: </p>
+      <p class="chosen"></p>
+      <a class="move" href="">Click here to move</a>
+    </div>
+    
+    <!-- bundle all the scripts! thanks to webpack -->
+    <script type="text/javascript" src="/bundle.js"></script>
+  </body>
+</html>

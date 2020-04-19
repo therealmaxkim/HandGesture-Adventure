@@ -1,35 +1,40 @@
-Teachable Machine Scaffold
+Hand Gesture Adventure by Max Kim
 ===========================
 
 This app is a very small scaffold to get you started using Teachable Machine. It will require an internet connection to work, since it loads ml5 as well as TensorFlow from a CDN.
 
+
 ## Basic Usage
 
 ```
+npm install 
 npm run watch
 ```
 
-will start a webpack server at localhost:3000. From the browser you'll be able to see a simple example that recognizes "heart hands," or when you make your hands look like this ![Heart Hands](https://image.shutterstock.com/image-photo/woman-making-heart-her-hands-600w-1211985307.jpg)
+will start a webpack server at localhost:3000. Start by typing in your name and clicking "go". 
 
-If you want to see the sound recognition or drawing recognition examples, you'll need to comment out the appropriate line in `app/app.js` to change which `setup` function is loaded.
+## Changelog
+* changed index.html
+* added start.html
+* added images to public folder
+* added text.json in root folder
+* changed server.js to handle more routes
 
-## Running the downloader
 
-This starter includes a script that you can use to download images off of Image Net. To download 100 random images to a directory called `data/random` you could run
+## Features
+1. Ability to choose 3 moves based on hand gesture 
+* Left: L shape with left hand, thumb pointing right
+* Up: Two index fingers up, fists closed
+* Right: rock sign with right hand. (thumb, index finger, and pinky finger up). Palm facing you. 
 
-```sh
-npm run images -- -o data/random
+2. One single template HTML with multiple path information saved in json file. Placeholders for attributes on each page is saved in a json format, and used to navigate through pages based on the endpoint. 
+
+3. Dynamically change links based on what the model determines the hand gestures are 
+
+
+## Bugs
+1. The name will be directly written to the html after each run, so in order to not get %name% show up after you try to run it from scratch, you may have to change it back to 
+
 ```
-
-If you wanted instead to get 100 images with a particular wnid, then you'd execute something like this:
-
-```sh
-npm run images -- -o data/red-panda --wnid n02509815 --randomize
+<p class="name">%name%</p>
 ```
-
-Which will download 100 images of a red panda. The `--randomize` flag tells the downloader whether to download the first 100 images, or to scramble the list of images first. You can also use the `--count` flag to limit or increase the number of images downloaded. Note that many links in Image Net are broken, and you may see errors in the console while downloading.
-
-## Attribution
-A long time ago this was a starter on Glitch using React and Webpack. It was copied by @starakaj, and then React has been removed You can find the original at https://glitch.com/~starter-react.
-
-This project relates to video 2 of 5 in the [React Starter Kit](https://glitch.com/react-starter-kit) video series.
